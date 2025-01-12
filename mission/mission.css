@@ -1,0 +1,61 @@
+body {
+    font-family: 'Times New Roman', serif;
+    font-size: 20px; 
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+}
+
+content {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.title {
+    text-align: center; 
+    margin-bottom: 30px; 
+}
+
+.title h1 {
+    font-size: 2em; 
+    letter-spacing: 2px; 
+    text-transform: uppercase; 
+    line-height: 1.5; 
+    margin-bottom: 10px; 
+}
+
+.title h2 {
+    font-size: 1.5em; 
+    color: #006EB6; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    margin: 0; 
+    line-height: 1.5; 
+}
+
+main {
+    text-align: left; 
+    line-height: 1.5; 
+}
+
+.does-list {
+    margin-left: 20px; 
+    list-style-type: decimal; 
+}
+
+.does-list li {
+    margin-bottom: 10px; 
+}
+
+footer {
+    text-align: center; /* Center the footer content */
+    margin-top: 30px; /* Space above the footer */
+}
+
+.logo {
+    width: 150px; 
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+}
