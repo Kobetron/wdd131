@@ -92,3 +92,46 @@ footer {
         flex-direction: row;
     }
 }
+
+
+
+.hide {
+    display: none;
+}
+
+
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: grid;
+    place-items: center;
+    z-index: 10;
+}
+
+
+.viewer img {
+    max-height: 90%;
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+
+.close-viewer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #f45b69;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.close-viewer:hover {
+    background: #d43f55;
+}
