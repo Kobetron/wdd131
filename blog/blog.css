@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     font-family: Helvetica, Arial, sans-serif;
     background-color: #fff;
@@ -14,7 +14,7 @@ h1 {
     padding: 20px;
 }
 
-/* Skip to Content Link */
+
 .skiptocontent a {
     position: absolute;
     top: -40px;
