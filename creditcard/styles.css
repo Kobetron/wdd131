@@ -1,0 +1,149 @@
+/* form {
+    display:grid;
+    grid-template-columns: 100px 300px 100px;
+}
+
+#cardFront, #cardBack {
+    background-color: lightgrey;
+    height: 300px;
+}
+
+#cardFront {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#cardBack {
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+button {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+#cardNumberContainer {
+    grid-column: 1/2;
+    grid-row: 2/3;
+} */
+
+/* Basic page styling */
+
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea;
+    padding: 20px;
+  }
+  
+  /* Center the form */
+  form#cc {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  /* Grid container for overlapping cards */
+  .card-grid {
+    display: grid;
+    position: relative;
+    height: 260px; /* Adjust height as needed */
+    margin-bottom: 20px;
+  }
+  
+  /* Card Front and Card Back container styling */
+  #cardFront,
+  #cardBack {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Position Card Back first */
+  #cardBack {
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 1;
+    /* Provide inner grid for its own elements */
+    display: grid;
+    grid-template-rows: auto 1fr;
+    row-gap: 10px;
+  }
+  
+  /* Magnetic strip on Card Back */
+  .magnetic-strip {
+    background-color: #555;
+    height: 40px;
+    border-radius: 4px;
+  }
+  
+  /* Position Card Front overlapping the back */
+  #cardFront {
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 2;
+    /* Use grid to organize inner elements */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
+    gap: 10px;
+  }
+  
+  /* Total text spanning full width */
+  .total {
+    grid-column: 1 / -1;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Center the card image */
+  .card-image {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Field group styling */
+  .field-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Labels and inputs */
+  label {
+    font-size: 0.9em;
+    margin-bottom: 3px;
+  }
+  
+  input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Submit Button */
+  button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 500px) {
+    .card-grid {
+      height: auto;
+    }
+    #cardFront,
+    #cardBack {
+      padding: 10px;
+    }
+  }
